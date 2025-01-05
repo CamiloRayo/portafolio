@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<!---Camilo Rayo--->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Últimas Vacaciones</title>
+</head>
+<body>
+    <h1>Mis Últimas Vacaciones en la Playa</h1>
+    <p>Este año decidí tomar un descanso y visitar <strong>Cartagena, Colombia</strong>. Fue una experiencia <em>inolvidable</em> llena de sol, arena y mar.</p>
+    <h2>El Viaje</h2>
+    <p>Todo comenzó con un vuelo temprano. Al llegar, sentí de inmediato el <strong>calor tropical</strong> y la hospitalidad de la ciudad. Pasear por las calles coloniales fue como viajar en el tiempo.</p>
+    <h2>Momentos Destacados</h2>
+    <p>Uno de los momentos más emocionantes fue visitar la <em>Playa Blanca</em>. El agua cristalina y el sonido de las olas crearon una atmósfera de <strong>relajación total</strong>. Además, disfruté de un delicioso plato de mariscos frescos.</p>
+    <h2>Conclusión</h2>
+    <p>Estas vacaciones fueron un recordatorio de la importancia de desconectar y disfrutar de los pequeños momentos. ¡Espero volver pronto!</p>
+</body>
+</html>
