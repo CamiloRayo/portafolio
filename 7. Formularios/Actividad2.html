@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<!---Camilo Rayo--->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra de Altavoces</title>
+</head>
+<body>
+    <h1>Formulario de Compra</h1>
+    <form>
+        <label for="modelo">Modelo:</label>
+        <select id="modelo" name="modelo">
+            <option value="" disabled selected>Selecciona el modelo.</option>
+            <option value="R4">R4</option>
+            <option value="R5">R5</option>
+            <option value="SR1">SR1</option>
+        </select>
+        <br><br>
+        <label for="potencia">Potencia Máxima (50-100W):</label>
+        <input type="number" id="potencia" name="potencia" min="50" max="100">
+        <br><br>
+        <label for="bluetooth">Bluetooth:</label>
+        <input type="checkbox" id="bluetooth" name="bluetooth">
+        <br><br>
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color">
+        <br><br>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" value="4">
+        <br><br>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
