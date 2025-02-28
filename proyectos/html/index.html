@@ -14,33 +14,61 @@
         }
         h1, h2 {
             color: #0077b5;
+            margin-bottom: 1.5rem;
         }
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #2d2d2d;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
-        .activity-list {
-            list-style: none;
-            padding: 0;
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
         }
-        .activity-list li {
-            margin: 10px 0;
-        }
-        .activity-list a {
-            color: #ffffff;
+        .activity-card {
+            background-color: #3a3a3a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-decoration: none;
-            transition: color 0.3s;
+            color: inherit;
         }
-        .activity-list a:hover {
-            color: #0077b5;
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,119,181,0.2);
+            background-color: #0077b5;
+        }
+        .activity-card h3 {
+            margin: 0 0 0.5rem 0;
+            color: #ffffff;
+        }
+        .activity-card p {
+            margin: 0;
+            opacity: 0.8;
         }
         .back-link {
             display: inline-block;
-            margin-top: 20px;
-            color: #0077b5;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: #0077b5;
+            color: white;
             text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .back-link:hover {
-            text-decoration: underline;
+            background-color: #005f8d;
+        }
+        @media (max-width: 768px) {
+            .activity-grid {
+                grid-template-columns: 1fr;
+            }
+            .section {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -48,48 +76,190 @@
     <h1>Proyecto HTML</h1>
     <div class="section">
         <h2>1. Introducción</h2>
-        <ul class="activity-list">
-            <li><a href="../html/1. Introducción/hola.html">hola.html</a></li>
-        </ul>
+        <div class="activity-grid">
+            <a href="../html/1. Introducción/hola.html" class="activity-card">
+                <h3>hola.html</h3>
+                <p>Primer ejercicio de introducción</p>
+            </a>
+        </div>
     </div>
     <div class="section">
         <h2>2. Formato</h2>
-        <ul class="activity-list">
-            <li><a href="../html/2. Formato/Actividad1.html">Actividad 1</a></li>
-            <li><a href="../html/2. Formato/Actividad2.html">Actividad 2</a></li>
-            <li><a href="../html/2. Formato/Actividad3.html">Actividad 3</a></li>
-            <li><a href="../html/2. Formato/Actividad4.html">Actividad 4</a></li>
-            <li><a href="../html/2. Formato/Actividad5.html">Actividad 5</a></li>
-            <li><a href="../html/2. Formato/Actividad6.html">Actividad 6</a></li>
-            <li><a href="../html/2. Formato/Actividad7.html">Actividad 7</a></li>
-        </ul>
+        <div class="activity-grid">
+            <a href="../html/2. Formato/Actividad1.html" class="activity-card">
+                <h3>Actividad 1</h3>
+                <p>Formato básico de texto</p>
+            </a>
+            <a href="../html/2. Formato/Actividad2.html" class="activity-card">
+                <h3>Actividad 2</h3>
+                <p>Uso de encabezados</p>
+            </a>
+            <a href="../html/2. Formato/Actividad3.html" class="activity-card">
+                <h3>Actividad 3</h3>
+                <p>Párrafos y saltos de línea</p>
+            </a>
+            <a href="../html/2. Formato/Actividad4.html" class="activity-card">
+                <h3>Actividad 4</h3>
+                <p>Elementos de formato especial</p>
+            </a>
+            <a href="../html/2. Formato/Actividad5.html" class="activity-card">
+                <h3>Actividad 5</h3>
+                <p>Comentarios en HTML</p>
+            </a>
+            <a href="../html/2. Formato/Actividad6.html" class="activity-card">
+                <h3>Actividad 6</h3>
+                <p>Entidades HTML</p>
+            </a>
+            <a href="../html/2. Formato/Actividad7.html" class="activity-card">
+                <h3>Actividad 7</h3>
+                <p>Ejercicio completo de formato</p>
+            </a>
+        </div>
     </div>
     <div class="section">
         <h2>3. Hipervínculos</h2>
-        <ul class="activity-list">
-            <li><a href="../html/3. Hipervinculos/Actividad1.html">Actividad 1</a></li>
-            <li><a href="../html/3. Hipervinculos/Actividad2.html">Actividad 2</a></li>
-            <li><a href="../html/3. Hipervinculos/Actividad3.html">Actividad 3</a></li>
-        </ul>
+        <div class="activity-grid">
+            <a href="../html/3. Hipervinculos/Actividad1.html" class="activity-card">
+                <h3>Actividad 1</h3>
+                <p>Enlaces básicos</p>
+            </a>
+            <a href="../html/3. Hipervinculos/Actividad2.html" class="activity-card">
+                <h3>Actividad 2</h3>
+                <p>Enlaces internos</p>
+            </a>
+            <a href="../html/3. Hipervinculos/Actividad3.html" class="activity-card">
+                <h3>Actividad 3</h3>
+                <p>Enlaces externos</p>
+            </a>
+        </div>
     </div>
     <div class="section">
         <h2>4. Listas</h2>
-        <ul class="activity-list">
-            <li><a href="../html/4. Listas/Actividad1.html">Actividad 1</a></li>
-            <li><a href="../html/4. Listas/Actividad2.html">Actividad 2</a></li>
-            <li><a href="../html/4. Listas/Actividad3.html">Actividad 3</a></li>
-            <li><a href="../html/4. Listas/Actividad4.html">Actividad 4</a></li>
-            <li><a href="../html/4. Listas/Actividad5.html">Actividad 5</a></li>
-        </ul>
+        <div class="activity-grid">
+            <a href="../html/4. Listas/Actividad1.html" class="activity-card">
+                <h3>Actividad 1</h3>
+                <p>Listas no ordenadas</p>
+            </a>
+            <a href="../html/4. Listas/Actividad2.html" class="activity-card">
+                <h3>Actividad 2</h3>
+                <p>Listas ordenadas</p>
+            </a>
+            <a href="../html/4. Listas/Actividad3.html" class="activity-card">
+                <h3>Actividad 3</h3>
+                <p>Listas de definición</p>
+            </a>
+            <a href="../html/4. Listas/Actividad4.html" class="activity-card">
+                <h3>Actividad 4</h3>
+                <p>Listas anidadas</p>
+            </a>
+            <a href="../html/4. Listas/Actividad5.html" class="activity-card">
+                <h3>Actividad 5</h3>
+                <p>Ejercicio completo de listas</p>
+            </a>
+        </div>
     </div>
     <div class="section">
         <h2>5. Imágenes</h2>
-        <ul class="activity-list">
-            <li><a href="../html/5. Imagenes/Actividad1.html">Actividad 1</a></li>
-            <li><a href="../html/5. Imagenes/Actividad2.html">Actividad 2</a></li>
-        </ul>
+        <div class="activity-grid">
+            <a href="../html/5. Imagenes/Actividad1.html" class="activity-card">
+                <h3>Actividad 1</h3>
+                <p>Inserción de imágenes</p>
+            </a>
+            <a href="../html/5. Imagenes/Actividad2.html" class="activity-card">
+                <h3>Actividad 2</h3>
+                <p>Atributos de imágenes</p>
+            </a>
+            <a href="../html/5. Imagenes/Actividad3.html" class="activity-card">
+                <h3>Actividad 3</h3>
+                <p>Mapas de imágenes</p>
+            </a>
+            <a href="../html/5. Imagenes/Actividad4.html" class="activity-card">
+                <h3>Actividad 4</h3>
+                <p>Optimización de imágenes</p>
+            </a>
+        </div>
     </div>
-
+    <div class="section">
+        <h2>6. Tablas</h2>
+        <div class="activity-grid">
+            <a href="../html/6. Tablas/Actividad1.html" class="activity-card">
+                <h3>Actividad 1</h3>
+                <p>Tablas básicas</p>
+            </a>
+            <a href="../html/6. Tablas/Actividad2.html" class="activity-card">
+                <h3>Actividad 2</h3>
+                <p>Encabezados de tabla</p>
+            </a>
+            <a href="../html/6. Tablas/Actividad3.html" class="activity-card">
+                <h3>Actividad 3</h3>
+                <p>Combinación de celdas</p>
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <h2>7. Formularios</h2>
+        <div class="activity-grid">
+            <a href="../html/7. Formularios/Actividad1.html" class="activity-card">
+                <h3>Actividad 1</h3>
+                <p>Formulario básico</p>
+            </a>
+            <a href="../html/7. Formularios/Actividad2.html" class="activity-card">
+                <h3>Actividad 2</h3>
+                <p>Tipos de inputs</p>
+            </a>
+            <a href="../html/7. Formularios/Actividad3.html" class="activity-card">
+                <h3>Actividad 3</h3>
+                <p>Validación de formularios</p>
+            </a>
+            <a href="../html/7. Formularios/Actividad4.html" class="activity-card">
+                <h3>Actividad 4</h3>
+                <p>Diseño avanzado de formularios</p>
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <h2>8. Multimedia</h2>
+        <div class="activity-grid">
+            <a href="../html/8. Multimedia/Actividad1.html" class="activity-card">
+                <h3>Actividad 1</h3>
+                <p>Inserción de audio</p>
+            </a>
+            <a href="../html/8. Multimedia/Actividad2.html" class="activity-card">
+                <h3>Actividad 2</h3>
+                <p>Inserción de video</p>
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <h2>9. Contenido</h2>
+        <div class="activity-grid">
+            <a href="../html/9. Contenido/Actividad1.html" class="activity-card">
+                <h3>Actividad 1</h3>
+                <p>Iframes</p>
+            </a>
+            <a href="../html/9. Contenido/Actividad2.html" class="activity-card">
+                <h3>Actividad 2</h3>
+                <p>Embeds</p>
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <h2>11. Interactivos</h2>
+        <div class="activity-grid">
+            <a href="../html/11. Interactivos/Actividad1.html" class="activity-card">
+                <h3>Actividad 1</h3>
+                <p>Menús desplegables</p>
+            </a>
+            <a href="../html/11. Interactivos/Actividad2.html" class="activity-card">
+                <h3>Actividad 2</h3>
+                <p>Acordeones</p>
+            </a>
+            <a href="../html/11. Interactivos/Actividad3.html" class="activity-card">
+                <h3>Actividad 3</h3>
+                <p>Modales</p>
+            </a>
+        </div>
+    </div>
     <a href="../../index.html" class="back-link">← Volver al Portafolio Principal</a>
 </body>
 </html>
