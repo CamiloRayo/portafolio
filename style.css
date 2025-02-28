@@ -1,0 +1,228 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.navbar {
+    background: #000000;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.linkedin-logo {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.linkedin-logo:hover {
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 6rem 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card:hover .project-overlay {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,119,181,0.2);
+}
+
+.projects-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 30px;
+    margin: -15px;
+}
+
+.projects-table td {
+    width: 50%;
+    vertical-align: middle;
+    padding: 15px;
+}
+
+.projects-table .project-card {
+    display: block;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.project-card {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #0077b5;
+}
+
+.tech-tag {
+    display: inline-block;
+    background: #0077b5;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.project-info p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0077b5;
+}
+
+.project-info {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.contact-section {
+    padding: 6rem 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background: #2d2d2d;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: #1a1a1a;
+    border: 1px solid #0077b5;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+}
+
+button {
+    background: #0077b5;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background: #005f8d;
+}
+
+@media (max-width: 768px) {
+    .projects-table {
+        display: block;
+        border-spacing: 0;
+    }
+
+    .projects-table tr,
+    .projects-table td {
+        display: block;
+        width: 100% !important;
+        padding: 10px;
+    }
+    
+    .projects-table .project-card {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .project-grid {
+        gap: 2rem;
+        padding: 20px;
+    }
+    
+    .section {
+        padding: 4rem 20px;
+    }
+}
