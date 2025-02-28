@@ -1,13 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<!---Camilo Rayo--->
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Texto de la pestaña</title>
-    </head>
-    <body>
-       Mi primera web 
-       <h1>Online</h1>
-       <h2>Subtitulo 1</h2>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Camilo Rayo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 style="color: white;">Portafolio Juan Camilo</h1>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="www.linkedin.com/in/juancamilorayocastillo" target="_blank">
+                    <svg class="linkedin-logo" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="section" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/1920/1080') center/cover;">
+        <div class="section-content">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Desarrollador Full-Stack</h2>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+                Transformando ideas en experiencias digitales impactantes
+            </p>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <div class="section-content">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Proyectos Destacados</h2>
+            
+            <table class="projects-table">
+                <tr>
+                    <td>
+                        <a href="html/index.html" class="project-card" style="
+                            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                            url('images/html.jpg');
+                            background-size: cover;
+                            background-position: center;
+                        ">
+                            <div class="project-overlay"></div>
+                            <div class="project-info">
+                                <h3>HTML</h3>
+                                <p>Maquetación web semántica</p>
+                                <div class="tech-tag">EstructuraWeb</div>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="css/index.html" class="project-card" style="
+                            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                            url('images/css.png');
+                            background-size: cover;
+                            background-position: center;
+                        ">
+                            <div class="project-overlay"></div>
+                            <div class="project-info">
+                                <h3>CSS</h3>
+                                <p>Estilizado y diseño creativo</p>
+                                <div class="tech-tag">EstilosWeb</div>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        Juan Camilo Rayo Castillo - Copyright todos los derechos casi reservados
+    </footer>
+</body>
 </html>
